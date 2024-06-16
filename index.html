@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Piyush Wardhe | Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+
+		#logo {
+			width: 30px;
+			/* Adjust the size as needed */
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		/* Now editing for mobile screen */
+		.img-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 120%;
+			max-width: 630px;
+			/* Set a maximum width for the image container */
+			margin: 0;
+			/* Remove horizontal margin */
+			padding: 60px;
+
+		}
+
+		.img-container img {
+			width: 120%;
+			height: auto;
+			/* border-radius: 120px; */
+		}
+
+		/* CSS for hiding the image on screens smaller than 768px */
+		@media (max-width: 768px) {
+			.img-container {
+				display: none;
+				/* Hide the image container */
+			}
+		}
+
+
+		.btn-primary,
+		.btn-outline-white {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			/* Apply smooth transition to transform and box-shadow over 0.3 seconds with ease timing function */
+		}
+
+		.btn-primary:hover,
+		.btn-outline-white:hover {
+			transform: scale(1.06);
+			/* Apply a slight zoom-in effect on hover */
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+			/* Add a subtle shadow effect on hover */
+		}
+
+
+		.btn {
+			display: inline-block;
+			padding: 0.75em 1.5em;
+			/* Adjust padding as needed */
+			margin: 10px 0;
+			/* Adjust margin as needed */
+			border-radius: 30px;
+			/* Apply border radius for rounded corners */
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			/* Remove border for outline button */
+		}
+	</style>
+
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="path/to/logo.png" alt="Logo" id="logo" style="display: none;"> Piyush Wardhe
+        </a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+            data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/SLogo.png" alt="Logo" id="logo" style="display: none;"> Piyush Wardhe
+			</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- About section -->
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<!-- background img -->
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<!-- <div class="one-third js-fullheight order-md-last img"
+                        style="background-image:url(images/bg_1.png);">
+                        <div class="overlay"></div>
+                    </div> -->
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello World!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Piyush Wardhe</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'Engineer  ',
+										'Web Developer  ',
+										'DevOps Enthusiast  ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>A Full Stack Web Developer</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="https://www.linkedin.com/in/piyush-wardhe28/"
+										class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/PiyushWardhe28"
+										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+								</p>
+							</div>
+						</div>
+						<div class="one-third js-fullheight order-md-last img img-container"
+							style="position: relative;">
+							<img src="images/Grey.png" alt="my Photo"
+								style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); width: 80%; height: auto;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About section -->
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/SLogo.png" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Piyush Vilas Wardhe</span></p>
+											<p><span class="title-s">Role: </span> <span>Full Stack Web Developer</span>
+											</p>
+											<p><span class="title-s">Experience: </span> <span>Java Developement Intern
+													@codsoft</span></p>
+											<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+										</div>
+									</div>
+								</div>
+								<!--*****************************Skills********************************************************-->
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Web Development</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Java Programming</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Data Structure & Algorithm (DSA)</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Object Oriented Programming (OOPs)</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>I'm Piyush V Wardhe, a second-year student at Vishwakarma Institute of Technology
+									Pune (VIT), actively engaged in pursuing my Bachelor of Technology degree in
+									Electronics and Telecommunications (E&TC) department. My academic journey is fueled
+									by a deep passion for coding, with exceptional problem-solving abilities. I possess
+									a highly enthusiastic personality and having keen interest towards research.
+									Moreover, I'm known for my collaborative spirit as a team player and for my
+									innovative thinking capabilities.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Java &amp; Web Developer</span>
+									</li>
+									<li class="d-flex"><span>Domain:</span> <span>Software Development, DevOps,
+											Cloud Computing &amp; Web Development</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology
+											(E&TC)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, German, Hindi &amp;
+											Marathi</span></li>
+									<li class="d-flex"><span>Tech Tools:</span> <span>IntelliJ, Git, ReactJS &amp;
+											MySQL</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>HTML, CSS, JavaScript, NodeJS,
+											Java, DSA &amp; OOPs</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Playing Chess,
+											Reading Books</span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="4">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/piyush-wardhe28/"
+										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Passionate Electronics and Telecommunications engineering student at Vishwakarma Institute of
+						Technology Pune, skilled in coding and problem-solving. Known for innovative thinking, teamwork,
+						and a keen interest in research.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>TY Student</h2>
+						<span class="position">Web Development</span>
+						<p class="mt-4">This year, I am focused on web development, utilizing tools like MongoDB,
+							JavaScript, React.js, Node.js, and other modern web technologies.
+						<ul>
+							<li>Learning to create dynamic websites and connect them to backend systems for seamless
+								data interactionF.</li>
+							<li>Developed a comprehensive Student Hall Management System, integrating features for
+								student accommodation, room allocation, billing, and administrative tasks. Utilized
+								technologies like HTML, CSS, JavaScript, and MySQL for database management.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-2024</span>
+						<h2>SY Student</h2>
+						<span class="position">Software Development</span>
+						<p class="mt-4">This year, my focus has been on immersing myself in software development and
+							expanding my skills in coding and programming.
+						<ul>
+							<li>During this year, I have acquired proficiency in Java programming and advanced Java
+								concepts, further enhancing my skills in software development.</li>
+							<li>In Advanced Java, I have gained expertise in advanced data structures such as graphs,
+								hashmaps, and other complex data management techniques.</li>
+							<li>I have also learned how to effectively utilize JDBC (Java Database Connectivity) for
+								database management and interaction in Advanced Java.</li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020-2022</span>
+						<h2>HSC Board</h2>
+						<span class="position">Vidhyabharti Mahavidhyalaya Amravati, Maharashtra</span>
+						<p class="mt-4">Grade: A</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019-2020</span>
+						<h2>SSC Board</h2>
+						<span class="position">Dnyanpeeth Convent Daryapur, Maharashtra </span>
+						<p class="mt-4">Grade: A+</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are the sample projects on SQL, HTML, CSS, Php, JavaScript, Java &amp; React.js.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="HallTicket.html" class="block-20 zoom-effect"
+							style="background-image: url('images/hallTicket.png');">
+							<!-- Placeholder content like an image or text can go here -->
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="HallTicket.html">Exam Hall Management System and Exam Hall
+									Ticket Generator Integrated with QR Code</a></h3>
+							<p>An Exam Hall Management System with Hall Ticket Generator, using HTML, CSS, PHP,
+								JavaScript, and SQL, integrates personalized QR codes, enabling secure student entry via
+								Controller of Examiner validation.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- ASL GLove -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/PiyushWardhe28/ASL-Glove-A-Real-Time-Sign-to-Speech-Device"
+							target="_blank" class="block-20 zoom-effect"
+							style="background-image: url('images/ASL Glove.png');">
+							<!-- Placeholder content like an image or text can go here -->
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a
+									href="https://github.com/PiyushWardhe28/ASL-Glove-A-Real-Time-Sign-to-Speech-Device"
+									target="_blank">ASL Glove: A Rel-Time Sign-to-Speech Device</a></h3>
+							<p>The ASL Glove, utilizing flex sensors and an Arduino Uno microcontroller, translates
+								American Sign Language gestures into text and speech, enhancing communication for
+								individuals with hearing, vision, and speech impairments.</p>
+							<!-- Removed redundant link -->
+							<!-- <a href="https://github.com/PiyushWardhe28/ASL-Glove-A-Real-Time-Sign-to-Speech-Device"
+								target="_blank" class="btn btn-primary">View GitHub Repository</a> -->
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Lost and Found System -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="lostAndFound.html" class="block-20 zoom-effect"
+							style="background-image: url('images/lost&Found.png');">
+							<!-- Placeholder content like an image or text can go here -->
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="lostAndFound.html">Lost &amp; Found System Using Java</a></h3>
+							<p>A Lost and Found System manages and tracks items reported lost or found in places like
+								airports, schools, and public transport. It records, tracks, retrieves, and matches lost
+								items with found ones.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- added justify-content-center to center align the last two projects -->
+		</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="13">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="6">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="300">0</strong>
+							<span>Student Network</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="70">0</strong>
+							<span>Cups of coffee</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<h4> I love to solve real-time problems &amp; uncover hidden software stories </h4>
+						<br>
+						<p><a href="https://github.com/PiyushWardhe28" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Pune, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://8530008794">+91 8 530 008 794</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:piyushwardhe28@gmail.com">piyushwardhe28@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a href="#">resumelink</a></p>
+					</div>
+				</div>
+
+				<div class="container">
+					<br>
+					<br>
+					<!-- Google for link -->
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a<span> Question? </span> <a href="https://forms.gle/SZsHaEKPZNvWeY1y9"
+									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+						</div>
+					</div>
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span
+									class="icon-youtube"></span></a></li> -->
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/piyush-wardhe28/"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://x.com/wardhepiyush"><span
+									class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="https://github.com/PiyushWardhe28"><span
+									class="icon-github"></span></a></li>
+						<!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span
+									class="icon-leetcode"></span></a></li> -->
+					</ul>
+					<br>
+				</div>
+			</div>
+	</section>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<!-- For image logo at the left side of name and should scroll down from about section -->
+	<script>
+		document.addEventListener('scroll', function () {
+			const homeSection = document.querySelector('#home-section');
+			const logo = document.querySelector('#logo');
+			const rect = homeSection.getBoundingClientRect();
+
+			if (rect.bottom <= 0) {
+				logo.style.display = 'inline';
+			} else {
+				logo.style.display = 'none';
+			}
+		});
+	</script>
+
+	<!-- grey.png for mobile view -->
+
+	<!-- <script>
+		document.addEventListener('DOMContentLoaded', function () {
+			function moveImageForMobile() {
+				var imageContainer = document.getElementById('my-image-container');
+				if (window.innerWidth <= 768) {
+					imageContainer.style.display = 'block';
+					document.body.appendChild(imageContainer);
+				} else {
+					// Restore the image container to its original place if the screen is larger than mobile view
+					var originalParent = document.querySelector('.original-parent-selector'); // Replace with the original parent selector
+					if (originalParent) {
+						originalParent.appendChild(imageContainer);
+					}
+				}
+			}
+
+			// Initial check
+			moveImageForMobile();
+
+			// Check on window resize
+			window.addEventListener('resize', moveImageForMobile);
+		});
+	</script> -->
+
+
+
+</body>
+
+</html>
